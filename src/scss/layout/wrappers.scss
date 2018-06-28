@@ -1,11 +1,13 @@
+* {
+  outline: 1px solid black;
+}
 .page-wrapper {
-    width: 100%;
-    overflow: hidden;
-    // margin: 0 auto;
-    padding-top: 45px;
+  width: 100%;
+  overflow: hidden;
+  // margin: 0 auto;
 }
 
 .block-wrapper {
-    max-width: 1170px;
-    margin: auto;
+  max-width: 1170px;
+  margin: auto;
 }
