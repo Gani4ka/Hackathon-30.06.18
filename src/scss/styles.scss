@@ -1,4 +1,17 @@
-/*
-   Import partials below
-*/
-@import 'normalize';
+// Base
+@import 'base/normalize';
+@import 'base/base';
+
+// Utils
+
+@import 'utils/visually-hidden';
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/placeholders';
+
+// Layout
+
+@import 'layout/wrappers';
+
+// Components
+
