@@ -2,10 +2,15 @@
   outline: 1px solid black;
 }
 
-// body {
-//   margin: -40px -20px 0px -20px; /*снизу не работает*/
-//   overflow-x: hidden;
-// }
+:root{
+  overflow-x: hidden;
+}
+
+body {
+  // margin: -40px -20px 0px -20px; /*снизу не работает*/
+  overflow-x: hidden;
+  background-color: #fff;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -23,4 +28,8 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.page-wrapper {
+  margin: 0 -30px 0px;
 }

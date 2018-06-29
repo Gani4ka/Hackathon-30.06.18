@@ -455,6 +455,15 @@ template {
   outline: 1px solid black;
 }
 
+:root {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
 html,
 body,
 div,
@@ -541,6 +550,10 @@ video {
   box-sizing: border-box;
 }
 
+.page-wrapper {
+  margin: 0 -30px 0px;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -568,24 +581,56 @@ input[type="radio"].visually-hidden {
 }
 
 .timer-section {
+  margin-bottom: -40px;
+}
+
+.timer-section__edit-wrapper {
+  position: relative;
   padding-top: 115px;
+  width: 100%;
   min-height: 660px;
-  background-color: grey;
+  background-color: rgba(50, 150, 150, 0.9);
+  background-repeat: no-repeat;
+}
+
+.timer-section__edit-wrapper::before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 30px;
+  left: 0;
+  background-image: url(".jpg");
+  background-repeat: no-repeat;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
 }
 
 .timer-section__wrapper {
   max-width: 1170px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .welcome-section {
-  padding-top: 55px;
-  min-height: 305px;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  background-color: #faf;
+  min-height: 100px;
+  padding: 100px 0px 40px;
+  z-index: 5;
 }
 
 .welcome-section__wrapper {
   max-width: 1170px;
-  margin: auto;
+  margin: 0 auto;
+  width: 80%;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: rotate(2deg);
+  transform: rotate(2deg);
 }
 
 .details-section {
@@ -610,13 +655,46 @@ input[type="radio"].visually-hidden {
 }
 
 .elit-section {
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  z-index: 4;
+}
+
+.elit-section__edit-wrapper {
   min-height: 776px;
-  background-color: gray;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 150, 150, 0.9);
+  background-image: url(".png");
+  background-repeat: no-repeat;
+  background-position: bottom 0px left 44%;
+  background-size: 120px 170px;
+}
+
+.elit-section__edit-wrapper::before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 30px;
+  left: 0;
+  background-image: url(".jpg");
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(2deg);
+  transform: rotate(2deg);
 }
 
 .elit-section__wrapper {
   max-width: 1170px;
-  margin: auto;
+  margin: 0 auto;
+  -webkit-transform: rotate(2deg);
+  transform: rotate(2deg);
 }
 
 .speakers-section {
@@ -631,13 +709,46 @@ input[type="radio"].visually-hidden {
 }
 
 .sponsor-section {
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  z-index: 4;
+}
+
+.sponsor-section__edit-wrapper {
   min-height: 700px;
-  background-color: grey;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 150, 150, 0.9);
+  background-image: url(".png");
+  background-repeat: no-repeat;
+  background-position: bottom 0px left 44%;
+  background-size: 120px 170px;
+}
+
+.sponsor-section__edit-wrapper::before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 30px;
+  left: 0;
+  background-image: url(".jpg");
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(2deg);
+  transform: rotate(2deg);
 }
 
 .sponsor-section__wrapper {
   max-width: 1170px;
-  margin: auto;
+  margin: 0 auto;
+  -webkit-transform: rotate(2deg);
+  transform: rotate(2deg);
 }
 
 .past-section {
@@ -647,7 +758,7 @@ input[type="radio"].visually-hidden {
 
 .past-section__wrapper {
   max-width: 1170px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .contact-section {
