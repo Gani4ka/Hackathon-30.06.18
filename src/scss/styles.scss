@@ -12,7 +12,23 @@
 
 // Layout
 
-@import 'layout/wrappers';
-@import 'layout/page';
+// @import 'layout/wrappers';
+// @import 'layout/page';
 
 // Components
+
+@import 'components/ivan/header';
+@import 'components/ivan/timer-section';
+@import 'components/ivan/welcome-section';
+
+@import 'components/anya/details-section';
+@import 'components/anya/table-section';
+@import 'components/anya/elit-section';
+
+@import 'components/dmytro/speakers-section';
+
+@import 'components/sergio/sponsor-section';
+@import 'components/sergio/past-section';
+
+@import 'components/dmytro/contact-section';
+@import 'components/dmytro/footer';
