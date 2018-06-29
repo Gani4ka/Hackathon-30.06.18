@@ -1,0 +1,111 @@
+// Убрать комент
+.header-layout {
+  min-height: 65px;
+  background-color: darkgray;
+}
+
+.timer-section-layout {
+  position: relative;
+  padding-top: 115px;
+  min-height: 660px;
+  background-color: grey;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      border-style: solid;
+      border-width: 0 0 195px 2500px;
+      border-color: transparent transparent #fff transparent;
+  }
+}
+
+.welcome-section-layout {
+  padding-top: 55px;
+  min-height: 305px;
+}
+
+.details-section-layout {
+  min-height: 510px;
+  padding-top: 135px;
+}
+
+.table-section-layout {
+  min-height: 230px;
+  padding-top: 100px;
+  padding-bottom: 85px;
+}
+
+.elit-section-layout {
+  position: relative;
+  min-height: 776px;
+  background-color: gray;
+
+  &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      border-style: solid;
+      border-width: 195px 2500px 0 0;
+      border-color: #fff transparent transparent transparent;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    border-style: solid;
+    border-width: 0 0 195px 2500px;
+    border-color: transparent transparent #fff transparent;
+    }
+}
+
+.speakers-section-layout {
+  padding-top: 145px;
+  padding-bottom: 178px;
+  min-height: 400px;
+  // z-index: 5;
+  // background-color: #fff;
+}
+
+.sponsor-section-layout {
+  position: relative;
+  min-height: 700px;
+  background-color: grey;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-style: solid;
+    border-width: 195px 2500px 0 0;
+    border-color: #fff transparent transparent transparent;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      border-style: solid;
+      border-width: 0 0 195px 2500px;
+      border-color: transparent transparent #fff transparent;
+    }
+}
+
+.past-section-layout {
+  padding-top: 115px;
+  padding-bottom: 90px;
+}
+
+.contact-section-layout {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.footer-layout {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
