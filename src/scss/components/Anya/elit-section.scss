@@ -34,4 +34,15 @@
   margin: 0 auto;
   transform: rotate($layout-angle);
   }
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    padding: 0;
+    width: 350px;
+    height: 350px;
+    border-radius: 175px;
+    overflow: hidden;
+  }
 }
