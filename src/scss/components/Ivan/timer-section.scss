@@ -1,13 +1,16 @@
 .timer-section {
   margin-bottom: -40px;
 
+
   &__edit-wrapper {
     position: relative;
     padding-top: 115px;
     width: 100%;
-    min-height: 660px;
+    min-height: 690px;
     background-color: rgba(50, 150, 150, 0.9); //change by Vanya
     // background-image: url('.png'); change by Vanya
+    background-color: $header-background;
+
     background-repeat: no-repeat;
     // background-position: bottom 0px left 44%; change by Vanya
     // background-size: 120px 170px; change by Vanya
@@ -18,8 +21,8 @@
       content: '';
       width: 100%;
       height: 100%;
-      top:30px;
-      left:0;
+      top: 30px;
+      left: 0;
       background-image: url('.jpg');
       background-repeat: no-repeat;
       transform-origin: center center;

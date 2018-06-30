@@ -1,9 +1,15 @@
 .header {
-  min-height: 65px;
-  background-color: darkgray;
+  // min-height: 65px;
+  background-color: $header-background;
+  // border: 1px solid green;
+
 
   &__wrapper {
-    max-width: 1170px;
+    display: flex;
+    max-width: 1030px;
     margin: auto;
+    // border: 1px solid green;
+    justify-content: space-between;
+    
   }
 }
