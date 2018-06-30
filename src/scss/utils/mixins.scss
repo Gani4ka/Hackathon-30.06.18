@@ -1,0 +1,31 @@
+@mixin flex ($jc: space-between, $ai: center)
+{
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin borderless-button ($brdr: none, $rds: 5px, $wdth: 200px, $mnh: 60px, $bgc: $mark-color-dark, $clr: $main-color-light){
+  display: block;
+  padding: 0;
+  border: $brdr;
+  border-radius: $rds;
+  width: $wdth;
+  min-height: $mnh;
+  background-color: $bgc;
+  color: $clr;
+}
+
+@mixin section-title ($color: $main-color-dark) {
+  font-family: $main-font;
+  font-size: 50px;
+  font-weight: $black;
+  color: $color;
+}
+
+@mixin section_text ($color: $main-color-dark) {
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: $thin;
+  color: $color;
+}
