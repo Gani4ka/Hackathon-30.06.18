@@ -2,7 +2,7 @@
   min-height: 435px;
   transform-origin: center center;
   transform: rotate(-$layout-angle);
-  background-color: #faf;
+  // background-color: #faf;
   background-color: $main-color-light;
 
   padding: 90px 0px 40px;
@@ -102,7 +102,6 @@
   }
 
   &__text {
-    display: block;
     margin: 0 auto;
     width: 205px;
     color: $text-color-dark;
