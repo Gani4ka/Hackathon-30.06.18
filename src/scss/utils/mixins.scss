@@ -1,0 +1,17 @@
+@mixin flex ($jc: space-between, $ai: center)
+{
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin borderless-button ($brdr: none, $rds: 5px, $wdth: 200px, $mnh: 60px, $bgc: $mark-color-dark, $clr: $main-color-light){
+  display: block;
+  padding: 0;
+  border: $brdr;
+  border-radius: $rds;
+  width: $wdth;
+  min-height: $mnh;
+  background-color: $bgc;
+  color: $clr; 
+}

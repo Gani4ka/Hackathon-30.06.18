@@ -7,3 +7,74 @@
     margin: auto;
   }
 }
+
+.contact-module{
+  @include flex($ai: flex-start);
+  margin: 0 auto;
+  width: 970px;
+  padding: 60px 70px;
+
+  &__location-container{
+    padding: 38px 30px 20px;
+  }
+
+  &__address{
+    width: 270px;
+    margin: 0 auto 30px;
+
+
+    &::before{
+      content: '';
+      display: block;
+      width: 132px;
+      height: 140px;
+      margin: 0 auto 45px;
+      background-image: url(../../../img/hexagonal-card.png);
+      background-repeat: no-repeat;
+      background-position: top 0 left 0;
+
+    }
+  }
+
+  &__button{
+    width: 200px;
+    min-height: 55px;
+    display: block;
+    margin: 0 auto;
+    background-color: $mark-color-dark;
+  }
+
+  &__form-container{
+    width: 400px;
+  }
+
+  &__contact-module__form{
+    width: 100%;
+  }
+}
+
+.contact-form{
+  width: 400px;
+
+  &__email-input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 27px;
+  }
+
+  &__textarea{
+    display: block;
+    width: 100%;
+    min-height: 250px;
+    box-sizing: border-box;
+    resize: none;
+    margin-bottom: 27px;
+  }
+
+  &__submit-btn{
+    @include borderless-button ($rds: 5px, $wdth: 100%, $mnh: 60px, $bgc: $table-color-dark)
+
+  }
+
+}
