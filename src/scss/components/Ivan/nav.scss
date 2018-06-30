@@ -1,0 +1,22 @@
+.nav {
+  &__list {
+    display: flex;
+    min-width: 582px;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // outline: 1px solid red;
+    padding-top: 72px;
+
+
+  }
+
+  &__item {
+    color: #ffffff;
+    font-family: $main-font;
+    font-size: 15px;
+    font-weight: $thin;
+    text-transform: uppercase;
+    
+  }
+}
