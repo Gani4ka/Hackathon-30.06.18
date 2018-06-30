@@ -451,10 +451,6 @@ template {
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-* {
-  outline: 1px solid black;
-}
-
 :root {
   overflow-x: hidden;
 }
@@ -571,13 +567,14 @@ input[type="radio"].visually-hidden {
 }
 
 .header {
-  min-height: 65px;
-  background-color: darkgray;
+  background-color: #564f4f;
 }
 
 .header__wrapper {
-  max-width: 1170px;
+  display: flex;
+  max-width: 1030px;
   margin: auto;
+  justify-content: space-between;
 }
 
 .timer-section {
@@ -588,8 +585,9 @@ input[type="radio"].visually-hidden {
   position: relative;
   padding-top: 115px;
   width: 100%;
-  min-height: 660px;
+  min-height: 690px;
   background-color: rgba(50, 150, 150, 0.9);
+  background-color: #564f4f;
   background-repeat: no-repeat;
 }
 
@@ -615,11 +613,11 @@ input[type="radio"].visually-hidden {
 .welcome-section {
   -webkit-transform-origin: center center;
   transform-origin: center center;
-  -webkit-transform: rotate(-2deg);
-  transform: rotate(-2deg);
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
   background-color: #faf;
   min-height: 100px;
-  padding: 100px 0px 40px;
+  padding: 90px 0px 40px;
   z-index: 5;
 }
 
@@ -629,8 +627,32 @@ input[type="radio"].visually-hidden {
   width: 80%;
   -webkit-transform-origin: center center;
   transform-origin: center center;
-  -webkit-transform: rotate(2deg);
-  transform: rotate(2deg);
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+.nav__list {
+  display: flex;
+  min-width: 582px;
+  list-style: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 72px;
+}
+
+.nav__item {
+  color: #ffffff;
+  font-family: roboto, arial, sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.site-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding-top: 46px;
 }
 
 .details-section {
@@ -657,8 +679,8 @@ input[type="radio"].visually-hidden {
 .elit-section {
   -webkit-transform-origin: center center;
   transform-origin: center center;
-  -webkit-transform: rotate(-2deg);
-  transform: rotate(-2deg);
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
   z-index: 4;
 }
 
@@ -686,15 +708,15 @@ input[type="radio"].visually-hidden {
   -webkit-transform-origin: center center;
   transform-origin: center center;
   background-repeat: no-repeat;
-  -webkit-transform: rotate(2deg);
-  transform: rotate(2deg);
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
 }
 
 .elit-section__wrapper {
   max-width: 1170px;
   margin: 0 auto;
-  -webkit-transform: rotate(2deg);
-  transform: rotate(2deg);
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
 }
 
 .speakers-section {
@@ -711,8 +733,8 @@ input[type="radio"].visually-hidden {
 .sponsor-section {
   -webkit-transform-origin: center center;
   transform-origin: center center;
-  -webkit-transform: rotate(-2deg);
-  transform: rotate(-2deg);
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
   z-index: 4;
 }
 
@@ -740,15 +762,15 @@ input[type="radio"].visually-hidden {
   -webkit-transform-origin: center center;
   transform-origin: center center;
   background-repeat: no-repeat;
-  -webkit-transform: rotate(2deg);
-  transform: rotate(2deg);
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
 }
 
 .sponsor-section__wrapper {
   max-width: 1170px;
   margin: 0 auto;
-  -webkit-transform: rotate(2deg);
-  transform: rotate(2deg);
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
 }
 
 .past-section {
