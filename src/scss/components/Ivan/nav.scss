@@ -5,18 +5,26 @@
     list-style: none;
     justify-content: space-between;
     flex-wrap: wrap;
-    // outline: 1px solid red;
     padding-top: 72px;
-
-
   }
 
   &__item {
-    color: #ffffff;
+    color: $main-color-light;
     font-family: $main-font;
     font-size: 15px;
     font-weight: $thin;
     text-transform: uppercase;
-    
+  }
+
+  &__link {
+    @extend %block-link;
+    color: $main-color-light;
+    transition: color 200ms linear;
+  }
+
+  &__link:hover {
+    @extend %block-link;
+    color: $mark-color-dark;
+    transition: color 200ms linear;
   }
 }
