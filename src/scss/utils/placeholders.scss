@@ -1,16 +1,17 @@
-%block-link{
+%block-link {
   display: block;
   text-decoration: none;
 }
 
-%flex-list{
-  @include flex ($jc: space-between, $ai: flex-start);
+%flex-list {
+  @include flex($jc: space-between, $ai: flex-start);
   list-style: none;
   flex-wrap: wrap;
 }
 
-%image{
+%image {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
+
