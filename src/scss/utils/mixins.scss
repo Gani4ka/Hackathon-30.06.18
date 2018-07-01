@@ -15,3 +15,10 @@
   background-color: $bgc;
   color: $clr; 
 }
+
+@mixin section-title ($color: $main-color-dark) {
+  font-family: $main-font;
+  font-size: 50px;
+  font-weight: $black;
+  color: $color;
+}
