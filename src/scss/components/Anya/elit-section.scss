@@ -1,0 +1,69 @@
+.elit-section {
+  transform-origin: center center;
+  transform: rotate(-$layout-angle);
+  z-index: 4;
+  margin-top: -100px;
+
+  &__edit-wrapper {
+    min-height: 776px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    // background-color: rgba(50, 150, 150, 0.9);
+    background-image: url("../img/elite-badge.png");
+    background-repeat: no-repeat;
+    background-position: top 0px left 44%;
+    background-size: 120px 170px;
+    // z-index: 6;
+
+    &::before {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 30px;
+      left: 0;
+      background-image: url("../img/reward-bg-h.jpg");
+      transform-origin: center center;
+      background-repeat: no-repeat;
+      transform: rotate($layout-angle);
+      background-position: center;
+      background-size: cover;
+      background-clip: content-box;
+    }
+
+    &::after {
+      background-image: url("../img/elite-badge.png");
+      background-repeat: no-repeat;
+      background-position: top 0px left 44%;
+      background-size: 120px 170px;
+      z-index: 76;
+    }
+  }
+
+  &__wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 175px;
+    transform: rotate($layout-angle);
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    padding: 0;
+    width: 350px;
+    height: 350px;
+    border-radius: 175px;
+    overflow: hidden;
+    z-index: 6;
+  }
+
+  &__title {
+    padding-right: 70px;
+    @include section-title($color: #fff);
+    text-align: right;
+  }
+}
