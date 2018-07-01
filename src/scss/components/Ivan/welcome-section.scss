@@ -43,8 +43,6 @@
   padding: 30px 30px 22px 30px;
   top: -90%;
   left: 58.3%;
-  // top: -260px;
-  // left: 600px;
 
   &__title {
     color: $main-color-dark;
@@ -87,18 +85,6 @@
     margin-bottom: 20px;
   }
 
-  // &__button {
-  //   background-color: $mark-color-dark;
-  //   border-radius: 5px;
-  //   color: $main-color-light;
-  //   font-family: $main-font;
-  //   font-size: 22px;
-  //   font-weight: $bold;
-  //   padding: 16px 135px;
-  //   margin-bottom: 18px;
-  //   cursor: pointer;
-  // }
-
   &__text {
     margin: 0 auto;
     width: 205px;
@@ -109,32 +95,13 @@
   }
 }
 
-/*
-* Buttons
-*/
-
-.front {
-  margin: 0;
-  color: #fff;
-  background-color: $mark-color-dark;
-}
-
-.back {
-  color: #fff;
-  background-color: #f58345;
-  text-decoration: none;
-}
-
-/* General Button Styles */
-.form__button {
+// Buttons
+.button-welcome {
   display: inline-block;
   position: relative;
   height: 60px;
   width: 367px;
-  // margin-right: 15px;
   cursor: pointer;
- 
-  // background-color: $mark-color-dark;
   border-radius: 5px;
   color: $main-color-light;
   font-family: $main-font;
@@ -143,13 +110,8 @@
   padding: 16px 135px;
   margin-bottom: 18px;
   cursor: pointer;
-  
 
-  &:last-child {
-    margin-right: 0px;
-  }
-
-  .form__inner {
+  &__inner {
     display: block;
     text-align: center;
     line-height: 60px;
@@ -158,35 +120,41 @@
     position: absolute;
     top: 0;
     left: 0;
-
-    .form__child {
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: 6px;
-    }
-  }
-}
-
-/* Flip Horizontal Animation */
-.flip {
-  perspective: 800px;
-
-  .form__inner {
     transform-style: preserve-3d;
     transition: transform 1s;
-
-    .form__child {
-      backface-visibility: hidden;
-    }
-
-    a {
-      transform: rotateY(180deg);
-    }
 
     &:hover {
       transform: rotateY(180deg);
     }
+  }
+
+  &__child {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    backface-visibility: hidden;
+  }
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &__child--back {
+    color: #fff;
+    background-color: #f58345;
+    text-decoration: none;
+    transform: rotateY(180deg);
+  }
+
+  &__child--front {
+    margin: 0;
+    color: #fff;
+    background-color: $mark-color-dark;
+  }
+
+  &__flip {
+    perspective: 800px;
   }
 }
