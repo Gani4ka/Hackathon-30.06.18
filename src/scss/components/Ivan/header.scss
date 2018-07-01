@@ -1,15 +1,71 @@
 .header {
-  // min-height: 65px;
+  min-height: 950px;
   background-color: $header-background;
-  // border: 1px solid green;
-
+  background-image: url(../img/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   &__wrapper {
     display: flex;
     max-width: 1030px;
     margin: auto;
-    // border: 1px solid green;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
+  }
+}
+
+.timer {
+  position: relative;
+  color: $main-color-light;
+  font-family: $sup-font;
+  font-size: 130px;
+  font-weight: $thin;
+  text-transform: uppercase;
+  margin-top: 126px;
+  margin-left: 103px;
+  margin-bottom: 11px;
+  line-height: 1;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 970px;
+    height: 193px;
+    border-radius: 20px;
+    border: 2px solid #90d23d;
+    top: -5px;
+    left: -75px;
+  }
+
+  &::after {
+    position: absolute;
+    content: url(../img/5-layers.png);
+    display: block;
+    top: 328px;
+    left: -159px;
+  }
+
+  &__list {
+    @extend %flex-list;
+    min-width: 779px;
+    margin-left: 138px;
+  }
+
+  &__item {
+    color: $main-color-light;
+    font-family: $sup-font;
+    font-size: 25px;
+    font-weight: $regular;
+    text-transform: uppercase;
+  }
+
+  &__item:nth-child(1) {
+    padding-right: 55px;
+  }
+
+  &__item:nth-child(2) {
+    padding-right: 26px;
   }
 }
