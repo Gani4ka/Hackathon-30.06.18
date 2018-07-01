@@ -1,0 +1,30 @@
+.nav {
+  &__list {
+    display: flex;
+    min-width: 582px;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 72px;
+  }
+
+  &__item {
+    color: $main-color-light;
+    font-family: $main-font;
+    font-size: 15px;
+    font-weight: $thin;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    @extend %block-link;
+    color: $main-color-light;
+    transition: color 200ms linear;
+  }
+
+  &__link:hover {
+    @extend %block-link;
+    color: $mark-color-dark;
+    transition: color 200ms linear;
+  }
+}
