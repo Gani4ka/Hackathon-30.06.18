@@ -1,15 +1,28 @@
 * {
-  // outline: 1px solid black;
+  outline: 1px solid black;
 }
 
 :root{
   overflow-x: hidden;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   // margin: -40px -20px 0px -20px; /*снизу не работает*/
   overflow-x: hidden;
   background-color: #fff;
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: $thin;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -24,7 +37,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, input {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

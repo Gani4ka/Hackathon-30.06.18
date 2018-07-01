@@ -13,5 +13,21 @@
   width: $wdth;
   min-height: $mnh;
   background-color: $bgc;
-  color: $clr; 
+
+  color: $clr;
 }
+
+@mixin section-title ($color: $main-color-dark) {
+  font-family: $main-font;
+  font-size: 50px;
+  font-weight: $black;
+  color: $color;
+
+
+@mixin section_text ($color: $main-color-dark) {
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: $thin;
+  color: $color;
+}
+

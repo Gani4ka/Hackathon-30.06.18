@@ -1,14 +1,14 @@
-// Base
-@import 'base/normalize';
-@import 'base/fonts';
-@import 'base/base';
-
 // Utils
 
 @import 'utils/visually-hidden';
 @import 'utils/variables';
 @import 'utils/mixins';
 @import 'utils/placeholders';
+
+// Base
+@import 'base/normalize';
+@import 'base/fonts';
+@import 'base/base';
 
 // Layout
 
