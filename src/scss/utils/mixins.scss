@@ -13,6 +13,7 @@
   width: $wdth;
   min-height: $mnh;
   background-color: $bgc;
+
   color: $clr;
 }
 
@@ -21,7 +22,7 @@
   font-size: 50px;
   font-weight: $black;
   color: $color;
-}
+
 
 @mixin section_text ($color: $main-color-dark) {
   font-family: $main-font;
@@ -29,3 +30,4 @@
   font-weight: $thin;
   color: $color;
 }
+
