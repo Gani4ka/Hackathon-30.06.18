@@ -39,7 +39,7 @@
 
   &__inner {
     min-height: 550px;
-    font-family: "Roboto", sans-serif;
+    font-family: $main-font;
     color: $main-color-light;
     display: flex;
     flex-direction: column;
@@ -49,7 +49,7 @@
 
   &__title {
     font-size: 50px;
-    font-weight: 700;
+    font-weight: $black;
     padding-top: 90px;
   }
 
@@ -58,13 +58,14 @@
     width: 50%;
     text-align: center;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: $light;
     line-height: 1.4;
   }
 
   &__icons {
     width: 50%;
     padding-top: 40px;
+    margin-bottom: 20px;
   }
   
   &__button {
@@ -74,7 +75,7 @@
       $brdr: none,
       $rds: 10px,
       $wdth: 200px,
-      $mnh: 50px,
+      $mnh: 55px,
       $bgc: $mark-color-dark,
       $clr: $main-color-light
     );

@@ -1,10 +1,16 @@
 .speakers-section {
-  padding-top: 145px;
-  padding-bottom: 178px;
-  min-height: 400px;
+  transform-origin: center center;
+  transform: rotate(-$layout-angle);
+  position: relative;
+  background-color: #fff;
+  padding: 145px 0px 178px;
+  z-index: 5;
 
   &__wrapper {
     max-width: 1170px;
-    margin: auto;
+    margin: 0 auto;
+    width: 80%;
+    transform-origin: center center;
+    transform: rotate($layout-angle);
   }
 }
