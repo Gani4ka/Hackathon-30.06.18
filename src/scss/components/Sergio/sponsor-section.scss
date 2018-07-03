@@ -3,6 +3,7 @@
   transform: rotate(-$layout-angle);
   z-index: 4;
 
+
   &__edit-wrapper {
     min-height: 700px; //думаю потом убрать можно, когда будет контент
     position: relative;
@@ -29,6 +30,8 @@
       background-repeat: no-repeat;
       transform: rotate($layout-angle);
       background-attachment: fixed;
+      background-position: center;
+
     }
   }
 

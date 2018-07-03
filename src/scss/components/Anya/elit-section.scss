@@ -2,8 +2,9 @@
   transform-origin: center center;
   transform: rotate(-$layout-angle);
   z-index: 4;
-  margin-top: -100px;
-  margin-bottom: -100px;
+  margin-top: -200px;
+  margin-bottom: -200px;
+
 
   // &__edit-wrapper {
   //   min-height: 776px;
@@ -24,7 +25,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    top: 30px;
+    // top: 30px;
     left: 0;
     background-image: url("../img/reward-bg-h.jpg");
     transform-origin: center center;
@@ -40,11 +41,12 @@
   &__wrapper {
     max-width: 1170px;
     margin: 0 auto;
-    min-height: 776px;
-    padding-top: 190px;
+    min-height: 980px;
+    padding-top: 307px;
     padding-right: 70px;
     transform: rotate($layout-angle);
     text-align: right;
+
   }
 
   &__title {
