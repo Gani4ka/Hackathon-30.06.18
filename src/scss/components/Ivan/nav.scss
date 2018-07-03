@@ -1,11 +1,18 @@
 .nav {
+  &--fixed {
+    position: fixed;
+    top: 0;
+    z-index: 998;
+    margin-left: 448px;
+  }
+
   &__list {
     display: flex;
     min-width: 582px;
     list-style: none;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 72px;
+    padding-top: 27px;
   }
 
   &__item {
