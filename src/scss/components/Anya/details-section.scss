@@ -1,9 +1,40 @@
 .details-section {
-  min-height: 510px;
-  padding-top: 135px;
+  // min-height: 510px;
+  padding-top: 80px;
+  transform-origin: center center;
+  transform: rotate(-$layout-angle);
+  position: relative;
+  background-color: #fff;
+  z-index: 6;
 
   &__wrapper {
     max-width: 1170px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0 70px;
+    display: flex;
+    transform-origin: center center;
+    transform: rotate($layout-angle);
+  }
+}
+
+.card {
+  padding: 0 20px;
+  text-align: center;
+  color: $main-color-dark;
+
+  &__image {
+    height: 200px;
+  }
+
+  &__title {
+    padding-top: 32px;
+    font-size: 35px;
+    font-weight: $black;
+  }
+
+  &__text {
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: $regular;
   }
 }
