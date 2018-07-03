@@ -1,3 +1,17 @@
 .site-logo {
-  padding-top: 46px;
+  // position: fixed;
+  // z-index: 999;
+  // top: 0;
+  // left: 0;
+  // outline: 1px solid red;
+  // background-color: rgb(34, 35, 35);
+
+
 }
+
+.site-logo--fixed {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+}
+
