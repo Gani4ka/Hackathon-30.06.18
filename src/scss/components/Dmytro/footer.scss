@@ -1,9 +1,64 @@
 .footer {
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 40px;
+  background-color: $mark-color-dark;
 
   &__wrapper {
-    max-width: 1170px;
-    margin: auto;
+    max-width: 1030px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__socials{
+    margin: 0 auto 18px;
+  }
+
+  &__copyright{
+    text-align: center;
+    color: $main-color-light;
+    font-family: $main-font;
+    font-size: 18px;
+    font-weight: $light;
+    line-height: 1.2;
+  }
+
+  &__up-link{
+    position: absolute;
+    top: 35%;
+    right: 0px;
+
+  }
+
+  &__up-icon{
+    width: 30px;
+    height: 30px;
+    fill: #000;
+    transition: all 0.2s ease-out 0.1s;
+  }
+
+  &__up-icon:hover{
+    transform: scale(1.5);
+    fill: #fff;
+  }
+
+}
+
+.socials{
+  @include flex($jc: center);
+  list-style: none;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+
+  &__link{
+    @extend %block-link;
+    font-size: 0;
+  }
+
+  &__icon{
+    width: 47px;
+    height: 47px;
+    margin: 0 7px;
+    //fill: red;
   }
 }
