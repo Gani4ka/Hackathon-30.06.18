@@ -16,14 +16,11 @@
 
   &__wrapper {
     width: 110%;
-    // margin: 0 auto;
-
     min-height: 700px;
     margin: 0 auto;
     max-width: 970px;
     transform-origin: center center;
     transform: rotate($layout-angle);
-    // background-color: green;
   }
 
   &__title {
@@ -38,7 +35,6 @@
   }
 
   &__list {
-    @include flex;
     flex-wrap: wrap;
     @extend %flex-list;
   }
