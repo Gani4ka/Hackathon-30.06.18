@@ -5,14 +5,13 @@
   background-color: #fff;
   padding: 145px 0px 178px;
   margin: 0 auto;
-  padding-top: 125px;
+  padding-top: 155px;
   margin-left: -200px;
   z-index: 5;
   padding-left: 200px;
   padding-bottom: 150px;
   margin-right: -100px;
   padding-right: 100px;
-
 
   &__wrapper {
     width: 110%;
@@ -44,6 +43,12 @@
     position: relative;
   }
 
+  &__item:hover .speakers-card {
+    opacity: 1;
+    transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  }
+
   &__img {
     width: 299px;
     height: 299px;
@@ -52,13 +57,17 @@
 }
 
 .speakers-card {
-  position: relative;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  position: absolute;
+  top: 0px;
   background-image: url(../img/speakers-background.png);
   width: 299px;
   height: 299px;
   border-radius: 15px;
   background-color: $mark-color-dark;
-  
+  padding-left: 35px;
+
   &__name {
     color: #fefefe;
     font-family: $main-font;
@@ -66,14 +75,32 @@
     font-weight: $black;
     line-height: 43px;
     max-width: 194px;
+    padding-top: 37px;
+    padding-bottom: 23px;
+  }
+
+  &__name::after {
+    display: block;
+    content: "";
+    width: 86px;
+    height: 6px;
+    background-color: #ffffff;
+    margin-top: 11px;
   }
 
   &__discr {
+    display: block;
     max-width: 199px;
     color: #fefefe;
     font-family: $main-font;
     font-size: 18px;
     font-weight: $medium;
+    text-decoration: none;
+    padding-bottom: 46px;
+  }
+
+  &__discr:hover {
+    text-decoration: underline;
   }
 
   &__social-list {
@@ -84,9 +111,6 @@
   &__img {
     width: 33px;
     height: 33px;
-    // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    // background-color: #ffffff;
+    margin-right: 5px;
   }
-  
-
 }
