@@ -50,26 +50,22 @@
     width: 90%;
     @include flex($jc: center, $ai: center);
     flex-wrap: wrap;
-    // outline: 1px solid red;
   }
 
-  &__photo--first{
-    animation: past-section-row1 15s ease-in-out 0s infinite;
-
-  }
-
-  &__photo--second{
+  &__photo--first {
     animation: past-section-row1 15s ease-in-out 0s infinite;
   }
 
-  &__photo--third{
-    animation: past-section-row2 15s ease-in-out 0s infinite;
-
+  &__photo--second {
+    animation: past-section-row1 15s ease-in-out 0s infinite;
   }
 
-  &__photo--four{
+  &__photo--third {
     animation: past-section-row2 15s ease-in-out 0s infinite;
+  }
 
+  &__photo--four {
+    animation: past-section-row2 15s ease-in-out 0s infinite;
   }
 
   &__button {
@@ -96,15 +92,15 @@
 
 @keyframes past-section-row1 {
   10% {
-    transform: translateY(319px);
+    transform: translateY(317px);
   }
 
   10% {
-    transform: translateY(319px);
+    transform: translateY(317px);
   }
 
   50% {
-    transform: translateY(319px);
+    transform: translateY(317px);
   }
 
   60% {

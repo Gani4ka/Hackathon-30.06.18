@@ -41,6 +41,7 @@
 
   &__item {
     padding-bottom: 39px;
+    position: relative;
   }
 
   &__img {
@@ -48,6 +49,44 @@
     height: 299px;
     border-radius: 15px;
   }
+}
 
+.speakers-card {
+  position: relative;
+  background-image: url(../img/speakers-background.png);
+  width: 299px;
+  height: 299px;
+  border-radius: 15px;
+  background-color: $mark-color-dark;
+  
+  &__name {
+    color: #fefefe;
+    font-family: $main-font;
+    font-size: 45px;
+    font-weight: $black;
+    line-height: 43px;
+    max-width: 194px;
+  }
+
+  &__discr {
+    max-width: 199px;
+    color: #fefefe;
+    font-family: $main-font;
+    font-size: 18px;
+    font-weight: $medium;
+  }
+
+  &__social-list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__img {
+    width: 33px;
+    height: 33px;
+    // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    // background-color: #ffffff;
+  }
+  
 
 }
