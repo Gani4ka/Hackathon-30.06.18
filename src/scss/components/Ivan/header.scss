@@ -55,14 +55,6 @@
     left: -75px;
   }
 
-  &::after {
-    position: absolute;
-    content: url(../img/5-layers.png);
-    display: block;
-    top: 328px;
-    left: -159px;
-  }
-
   &__list {
     @extend %flex-list;
     min-width: 779px;
@@ -88,8 +80,42 @@
 
 .svg {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  width: 182px;
+  height: 166px;
+  transform-origin: center center;
+
+  &--talk-shop {
+    top: 616px;
+    left: -49px;
+    transform: rotate(-16deg);
+    z-index: 5;
+  }
+
+  &--featured-item {
+    top: 597px;
+    left: 66px;
+    transform: rotate(10deg);
+    z-index: 4;
+  }
+
+  &--contact {
+    top: 583px;
+    left: 196px;
+    transform: rotate(0deg);
+    z-index: 3;
+  }
+
+  &--interviewed {
+    top: 570px;
+    left: 330px;
+    transform: rotate(-15deg);
+    z-index: 2;
+  }
+
+  &--community {
+    top: 561px;
+    left: 462px;
+    transform: rotate(9deg);
+    z-index: 1;
+  }
 }

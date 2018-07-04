@@ -7,6 +7,7 @@
   background-color: #fff;
   padding: 100px 0px 230px;
   z-index: 5;
+  margin-left: -100px;
 
   &__wrapper {
     max-width: 1170px;
@@ -14,6 +15,7 @@
     padding-left: 100px;
     transform-origin: center center;
     transform: rotate($layout-angle);
+    padding-left: 100px;
 
     &::after {
       content: url("../img/elite-badge.png");
@@ -42,7 +44,6 @@
   display: block;
   overflow: hidden;
   border-collapse: collapse;
-
 
   // & td, th, tr {
   //   border: none;
