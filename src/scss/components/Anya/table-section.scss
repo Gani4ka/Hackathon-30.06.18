@@ -1,7 +1,6 @@
 .table-section {
-  // width: 110%;
-  // margin: 0 auto;
   min-height: 530px;
+  margin-left: -100px;
   transform-origin: center center;
   transform: rotate(-$layout-angle);
   position: relative;
@@ -13,6 +12,7 @@
   &__wrapper {
     max-width: 1170px;
     margin: 0 auto;
+    padding-left: 100px;
     transform-origin: center center;
     transform: rotate($layout-angle);
     padding-left: 100px;
