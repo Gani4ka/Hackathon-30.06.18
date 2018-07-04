@@ -2,18 +2,22 @@
   transform-origin: center center;
   transform: rotate(-$layout-angle);
   z-index: 4;
+  margin-top: -400px;
+  margin-bottom: -400px;
+  padding-top: 188px;
+  padding-bottom: 200px;
 
   &__edit-wrapper {
-    min-height: 700px; //думаю потом убрать можно, когда будет контент
+    min-height: 1000px; //думаю потом убрать можно, когда будет контент
     position: relative;
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    // height: 100%;
     @include flex($jc: center, $ai: center);
     // background-color: #fff;
     // background-image: url('../img/bg.jpg');
 
-    background-repeat: no-repeat;
-    background-position: center;
+    // background-repeat: no-repeat;
+    // background-position: center;
     background-size: cover;
 
     &::before {
@@ -22,14 +26,17 @@
       content: "";
       width: 100%;
       height: 100%;
-      top: 30px;
-      left: 0;
+      // top: 90px;
+      // left: 30px;
+      // bottom: -90px;
       background-image: url("../img/bg.jpg");
       transform-origin: center center;
       background-repeat: no-repeat;
       transform: rotate($layout-angle);
       background-attachment: fixed;
-
+      background-position: center;
+      background-size: cover;
+      background-clip: content-box;
     }
   }
 
@@ -40,7 +47,7 @@
   }
 
   &__inner {
-    min-height: 550px;
+    min-height: 500px;
     font-family: $main-font;
     color: $main-color-light;
     display: flex;
@@ -56,7 +63,6 @@
   }
 
   &__text {
-    padding-top: 35px;
     width: 50%;
     text-align: center;
     font-size: 14px;
@@ -66,8 +72,8 @@
 
   &__icons {
     width: 50%;
-    padding-top: 40px;
-    margin-bottom: 20px;
+    // padding-top: 40px;
+    // margin-bottom: 20px;
   }
   
   &__button {
@@ -81,6 +87,8 @@
       $bgc: $mark-color-dark,
       $clr: $main-color-light
     );
+    outline: none;
+    cursor: pointer;
   }
 }
 

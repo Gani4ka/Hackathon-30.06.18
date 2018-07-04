@@ -1,10 +1,20 @@
 .past-section {
-  padding-top: 115px;
-  padding-bottom: 90px;
+  // padding-top: 115px;
+  // padding-bottom: 90px;
+  transform-origin: center center;
+  transform: rotate(-$layout-angle);
+  position: relative;
+  background-color: #fff;
+  padding: 45px 100px 178px 0;
+  z-index: 5;
+  margin-right: -100px;
 
   &__wrapper {
     max-width: 1170px;
     margin: 0 auto;
+    width: 80%;
+    transform-origin: center center;
+    transform: rotate($layout-angle);
   }
   &__inner {
     width: 100%;
@@ -46,6 +56,8 @@
       $clr: $main-color-light
     ); 
     font-size: 22px;
+    outline: none;
+    cursor: pointer;
   }
 }
 .past-album__block {
