@@ -50,6 +50,26 @@
     width: 90%;
     @include flex($jc: center, $ai: center);
     flex-wrap: wrap;
+    // outline: 1px solid red;
+  }
+
+  &__photo--first{
+    animation: past-section-row1 15s ease-in-out 0s infinite;
+
+  }
+
+  &__photo--second{
+    animation: past-section-row1 15s ease-in-out 0s infinite;
+  }
+
+  &__photo--third{
+    animation: past-section-row2 15s ease-in-out 0s infinite;
+
+  }
+
+  &__photo--four{
+    animation: past-section-row2 15s ease-in-out 0s infinite;
+
   }
 
   &__button {
@@ -71,5 +91,49 @@
   &:nth-last-child(-n + 2) {
     position: relative;
     top: -5px;
+  }
+}
+
+@keyframes past-section-row1 {
+  10% {
+    transform: translateY(319px);
+  }
+
+  10% {
+    transform: translateY(319px);
+  }
+
+  50% {
+    transform: translateY(319px);
+  }
+
+  60% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes past-section-row2 {
+  10% {
+    transform: translateY(-367px);
+  }
+
+  10% {
+    transform: translateY(-367px);
+  }
+
+  50% {
+    transform: translateY(-367px);
+  }
+
+  60% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(0px);
   }
 }

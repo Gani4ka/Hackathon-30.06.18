@@ -22,6 +22,7 @@
       position: absolute;
       bottom: -440px;
       left: 70px;
+      animation: elite-ball 20s ease-in-out 5s infinite;
     }
   }
 
@@ -96,5 +97,19 @@
     img {
       cursor: pointer;
     }
+  }
+}
+
+@keyframes elite-ball {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(800px, -50px);
+  }
+
+  100% {
+    transform: translate(0, 0);
   }
 }

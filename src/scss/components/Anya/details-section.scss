@@ -23,7 +23,27 @@
   color: $main-color-dark;
 
   &__image {
-    height: 200px;
+    width: 198px;
+    height: 211px;
+
+    &--community {
+      animation: animation-community 3s infinite;
+
+    }
+
+    &--community:hover {
+      fill: pink;
+      transition: color 200ms linear;
+    }
+
+    &--talk-shop:hover {
+      transform: scale(1.1);
+      transition: color 200ms linear;
+    }
+
+    &--war-story:hover {
+      animation: animation-war-story 2s;
+    }
   }
 
   &__title {
@@ -36,5 +56,29 @@
     padding-top: 20px;
     font-size: 14px;
     font-weight: $regular;
+  }
+}
+
+@keyframes animation-war-story {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animation-community {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(-5deg);
   }
 }
