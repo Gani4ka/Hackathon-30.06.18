@@ -90,6 +90,12 @@
     );
     outline: none;
     cursor: pointer;
+    transition: background-color 0.8s linear;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid #fff;
+    }
   }
 }
 

@@ -55,7 +55,7 @@
   &__button {
     @include borderless-button(
       $brdr: none,
-      $rds: 5px,
+      $rds: 10px,
       $wdth: 200px,
       $mnh: 55px,
       $bgc: $main-color-dark,
@@ -64,6 +64,12 @@
     font-size: 22px;
     outline: none;
     cursor: pointer;
+    transition: background-color 0.8s linear;
+
+    &:hover {
+      background-color: $mark-color-light;
+     color: $main-color-dark;
+    }
   }
 }
 
