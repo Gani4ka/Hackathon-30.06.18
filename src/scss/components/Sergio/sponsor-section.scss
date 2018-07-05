@@ -2,9 +2,9 @@
   transform-origin: center center;
   transform: rotate(-$layout-angle);
   z-index: 4;
-  margin-top: -400px;
+  margin-top: -470px;
   margin-bottom: -400px;
-  padding-top: 188px;
+  padding-top: 200px;
   padding-bottom: 200px;
 
   &__edit-wrapper {
@@ -12,6 +12,8 @@
     position: relative;
     @include flex($jc: center, $ai: center);
     background-size: cover;
+    min-height: 1000px;
+
 
     &::before {
       position: absolute;
@@ -49,7 +51,7 @@
   &__title {
     font-size: 50px;
     font-weight: $black;
-    padding-top: 90px;
+    padding-top: 100px;
   }
 
   &__text {

@@ -6,7 +6,6 @@
   margin-bottom: -200px;
   padding-bottom: 200px;
 
-
   // &__edit-wrapper {
   //   min-height: 776px;
   // position: relative;
@@ -37,7 +36,6 @@
     background-size: cover;
     background-clip: content-box;
     background-attachment: fixed;
-
   }
 
   &__wrapper {
@@ -84,7 +82,7 @@
     outline: none;
     cursor: pointer;
     transition: background-color 0.8s linear;
-    }
+  }
 
   &__button:hover {
     background-color: transparent;

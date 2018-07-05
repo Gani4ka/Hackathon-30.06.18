@@ -5,7 +5,7 @@
   transform: rotate(-$layout-angle);
   position: relative;
   background-color: #fff;
-  padding: 45px 100px 178px 0;
+  padding: 55px 100px 178px 0;
   z-index: 5;
   margin-right: -100px;
 
@@ -29,7 +29,7 @@
     align-self: flex-start;
     padding-left: 100px;
   }
-
+  
   &__title {
     text-align: left;
     font-size: 50px;
@@ -84,7 +84,7 @@
 
     &:hover {
       background-color: $mark-color-light;
-     color: $main-color-dark;
+      color: $main-color-dark;
     }
   }
 }
