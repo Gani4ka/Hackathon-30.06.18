@@ -13,9 +13,9 @@
     max-width: 1170px;
     margin: 0 auto;
     padding-left: 100px;
+    padding-bottom: 80px;
     transform-origin: center center;
     transform: rotate($layout-angle);
-    padding-left: 100px;
 
     &::after {
       content: url("../img/elite-badge.png");
