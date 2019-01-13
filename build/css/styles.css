@@ -1,16 +1,10 @@
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
   overflow: hidden;
 }
 
@@ -1203,7 +1197,6 @@ input {
   width: 1030px;
   border: 1px solid transparent;
   border-radius: 20px;
-  -webkit-border-radius: 20px;
   display: block;
   overflow: hidden;
   border-collapse: collapse;
@@ -1212,7 +1205,7 @@ input {
 .table__head {
   height: 75px;
   background-color: #a3cc40;
-  font-weight: .table__head black;
+  font-weight: 400;
   font-size: 30px;
   color: #fff;
 }

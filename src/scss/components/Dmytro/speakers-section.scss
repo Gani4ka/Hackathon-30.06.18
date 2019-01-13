@@ -51,10 +51,8 @@
   &__item:hover .speakers-section__img--operator {
     transform: scale(1.2);
 
-
     transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
-
 
   &__img {
     width: 299px;
@@ -125,5 +123,3 @@
 .speakers-card__img--dribbble {
   fill: black;
 }
-
-

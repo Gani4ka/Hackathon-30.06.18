@@ -41,24 +41,14 @@
   width: 1030px;
   border: 1px solid transparent;
   border-radius: 20px;
-  -webkit-border-radius: 20px;
   display: block;
   overflow: hidden;
   border-collapse: collapse;
 
-  // & td, th, tr {
-  //   border: none;
-  //   border-spacing: 0;
-  //   outline: 0;
-  // border: 2px solid transparent;
-  // }
-
   &__head {
     height: 75px;
     background-color: $mark-color-light;
-    // border-spacing: 0;
-    // border: none;
-    font-weight: &black;
+    font-weight: 400;
     font-size: 30px;
     color: #fff;
   }
@@ -69,7 +59,6 @@
     font-size: 22px;
     color: #fff;
     background-color: $table-color-dark;
-    // border: none;
 
     &:nth-of-type(4n) {
       background-color: $table-color-light;
@@ -79,14 +68,12 @@
   &__time {
     text-align: center;
     width: 230px;
-    // border: none;
   }
 
   &__stuff {
     text-align: left;
     width: 670px;
     padding-left: 70px;
-    // border: none;
   }
 
   &__plus {
