@@ -7,13 +7,10 @@
     padding-top: 115px;
     width: 100%;
     min-height: 690px;
-    background-color: rgba(50, 150, 150, 0.9); //change by Vanya
-    // background-image: url('.png'); change by Vanya
+    background-color: rgba(50, 150, 150, 0.9);
     background-color: $header-background;
-
     background-repeat: no-repeat;
-    // background-position: bottom 0px left 44%; change by Vanya
-    // background-size: 120px 170px; change by Vanya
+
 
     &::before {
       position: absolute;
