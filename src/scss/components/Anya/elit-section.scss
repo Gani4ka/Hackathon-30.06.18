@@ -2,68 +2,90 @@
   transform-origin: center center;
   transform: rotate(-$layout-angle);
   z-index: 4;
-  margin-top: -100px;
+  margin-top: -200px;
+  margin-bottom: -200px;
+  padding-bottom: 200px;
 
-  &__edit-wrapper {
-    min-height: 776px;
-    position: relative;
+  // &__edit-wrapper {
+  //   min-height: 776px;
+  // position: relative;
+  // width: 100%;
+  // height: 100%;
+  // background-color: rgba(50, 150, 150, 0.9);
+  // background-image: url("../img/elite-badge.png");
+  // background-repeat: no-repeat;
+  // background-position: top 0px left 44%;
+  // background-size: 120px 170px;
+  // z-index: 6;
+  // }
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
     width: 100%;
     height: 100%;
-    // background-color: rgba(50, 150, 150, 0.9);
-    background-image: url("../img/elite-badge.png");
+    // top: 30px;
+    left: 0;
+    background-image: url("../img/reward-bg-h.jpg");
+    background-color: $header-background;
+    transform-origin: center center;
     background-repeat: no-repeat;
-    background-position: top 0px left 44%;
-    background-size: 120px 170px;
-    // z-index: 6;
-
-    &::before {
-      position: absolute;
-      z-index: -1;
-      content: "";
-      width: 100%;
-      height: 100%;
-      top: 30px;
-      left: 0;
-      background-image: url("../img/reward-bg-h.jpg");
-      transform-origin: center center;
-      background-repeat: no-repeat;
-      transform: rotate($layout-angle);
-      background-position: center;
-      background-size: cover;
-      background-clip: content-box;
-    }
-
-    &::after {
-      background-image: url("../img/elite-badge.png");
-      background-repeat: no-repeat;
-      background-position: top 0px left 44%;
-      background-size: 120px 170px;
-      z-index: 76;
-    }
+    transform: rotate($layout-angle);
+    background-position: top;
+    background-size: cover;
+    background-clip: content-box;
+    background-attachment: fixed;
   }
 
   &__wrapper {
     max-width: 1170px;
     margin: 0 auto;
-    padding-top: 175px;
+    min-height: 776px;
+    padding-top: 290px;
+    padding-right: 70px;
     transform: rotate($layout-angle);
-  }
-
-  &__logo {
-    position: absolute;
-    top: 0;
-    left: 70px;
-    padding: 0;
-    width: 350px;
-    height: 350px;
-    border-radius: 175px;
-    overflow: hidden;
-    z-index: 6;
+    text-align: right;
   }
 
   &__title {
-    padding-right: 70px;
+    margin-bottom: 30px;
     @include section-title($color: #fff);
-    text-align: right;
+  }
+
+  &__text {
+    padding-left: 425px;
+    @include section_text($color: #fff);
+    font-weight: $light;
+
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__button {
+    @include borderless-button(
+      $brdr: none,
+      $rds: 15px,
+      $wdth: 200px,
+      $mnh: 55px,
+      $bgc: $mark-color-dark,
+      $clr: $main-color-light
+    );
+    display: inline-block;
+    font-family: $main-font;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.8s linear;
+  }
+
+  &__button:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
   }
 }

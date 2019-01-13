@@ -1,9 +1,141 @@
 .past-section {
-  padding-top: 115px;
-  padding-bottom: 90px;
+  // padding-top: 115px;
+  // padding-bottom: 90px;
+  transform-origin: center center;
+  transform: rotate(-$layout-angle);
+  position: relative;
+  background-color: #fff;
+  padding: 55px 100px 178px 0;
+  z-index: 5;
+  margin-right: -100px;
 
   &__wrapper {
     max-width: 1170px;
     margin: 0 auto;
+    width: 80%;
+    transform-origin: center center;
+    transform: rotate($layout-angle);
+  }
+
+  &__inner {
+    width: 100%;
+    height: 1230px;
+    color: $main-color-dark;
+    @include flex($jc: space-between, $ai: center);
+    flex-direction: column;
+  }
+
+  &__label {
+    align-self: flex-start;
+    padding-left: 100px;
+  }
+  
+  &__title {
+    text-align: left;
+    font-size: 50px;
+    font-weight: $black;
+    padding-top: 120px;
+  }
+
+  &__text {
+    padding-top: 35px;
+    width: 60%;
+    text-align: left;
+    font-size: 14px;
+    font-weight: $light;
+    line-height: 1.2;
+  }
+
+  &__album {
+    width: 90%;
+    @include flex($jc: center, $ai: center);
+    flex-wrap: wrap;
+  }
+
+  &__photo--first {
+    animation: past-section-row1 15s ease-in-out 0s infinite;
+  }
+
+  &__photo--second {
+    animation: past-section-row1 15s ease-in-out 0s infinite;
+  }
+
+  &__photo--third {
+    animation: past-section-row2 15s ease-in-out 0s infinite;
+  }
+
+  &__photo--four {
+    animation: past-section-row2 15s ease-in-out 0s infinite;
+  }
+
+  &__button {
+    @include borderless-button(
+      $brdr: none,
+      $rds: 10px,
+      $wdth: 200px,
+      $mnh: 55px,
+      $bgc: $main-color-dark,
+      $clr: $main-color-light
+    );
+    font-size: 22px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.8s linear;
+
+    &:hover {
+      background-color: $mark-color-light;
+      color: $main-color-dark;
+    }
+  }
+}
+
+.past-album__block {
+  &:nth-last-child(-n + 2) {
+    position: relative;
+    top: -5px;
+  }
+}
+
+@keyframes past-section-row1 {
+  10% {
+    transform: translateY(317px);
+  }
+
+  10% {
+    transform: translateY(317px);
+  }
+
+  50% {
+    transform: translateY(317px);
+  }
+
+  60% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes past-section-row2 {
+  10% {
+    transform: translateY(-367px);
+  }
+
+  10% {
+    transform: translateY(-367px);
+  }
+
+  50% {
+    transform: translateY(-367px);
+  }
+
+  60% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(0px);
   }
 }

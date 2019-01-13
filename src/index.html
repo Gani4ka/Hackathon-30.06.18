@@ -8,19 +8,16 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="theme-color" content="#000000">
-  <meta name="copyright" content="Author">
+  <meta name="copyright" content="Author Vanya">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
   <meta name="apple-mobile-web-app-title" content="Application Name">
-  <meta name="msapplication-TileImage" content="images/favicons/144x144.png">
+  <meta name="msapplication-TileImage" content="img/favicon.png">
   <meta name="msapplication-TileColor" content="#000000">
   <meta name="format-detection" content="telephone=no">
-
-  <title>Meetup Event</title>
-  <!-- Не подключается фавиконка...??? -->
-  <link rel="shortcut icon" href="img/favicon.png">
-
+  <link rel="icon" href="https://assets.wordpress.envato-static.com/uploads/2016/08/cropped-favicon-180x180.png" type="image/png" >
   <link rel="stylesheet" href="css/styles.min.css">
+  <title>Meetup Event</title>
 </head>
 
 <body>
@@ -42,59 +39,66 @@
       </section> -->
       <section class="welcome-section">
         <div class="welcome-section__wrapper">
-            //= html/ivan/welcome-section.html
+          //= html/ivan/welcome-section.html
         </div>
       </section>
       <!-- IVAN -->
       <!-- ANYA -->
-      <section id="details-section" class="details-section details-section__wrapper">
-          //= html/anya/details-section.html
+      <section id="details-section" class="details-section">
+        <div class="details-section__wrapper">
+            //= html/anya/details-section.html
+        </div>
       </section>
-      <section class="table-section">
+      <section id="table-section" class="table-section">
         <div class="table-section__wrapper">
           //= html/anya/table-section.html
         </div>
       </section>
       <section id="elit-section" class="elit-section">
-        <div class="elit-section__edit-wrapper">
+        <!-- <div class="elit-section__edit-wrapper"> -->
           <div class="elit-section__wrapper">
             //= html/anya/elit-section.html
           </div>
-        </div>
+        <!-- </div> -->
       </section>
       <!-- ANYA -->
       <!-- SOMEBODY -->
-      <section id="speakers-section" class="speakers-section speakers-section__wrapper">
+      <section id="speakers-section" class="speakers-section">
+          <div class="speakers-section__wrapper">
           //= html/dmytro/speakers-section.html
+          </div>
       </section>
       <!-- SOMEBODY -->
       <!-- SERGIO -->
-      <section id="sponsor-section" class="sponsor-section">
+      <section class="sponsor-section">
         <div class="sponsor-section__edit-wrapper">
           <div class="sponsor-section__wrapper">
-              //= html/sergio/sponsor-section.html
+            //= html/sergio/sponsor-section.html
           </div>
         </div>
       </section>
-      <section id="past-section" class="past-section past-section__wrapper">
-          //= html/sergio/past-section.html
-      </section>
+      <section id="past-section" class="past-section">
+          <div class="past-section__wrapper">
+              //= html/sergio/past-section.html
+          </div>
+        </section>
       <!-- SERGIO -->
       <!-- DMYTRO -->
       <section id="contact-section" class="contact-section">
         <div class="contact-section__wrapper">
-            //= html/dmytro/contact-section.html
+          //= html/dmytro/contact-section.html
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-          //= html/dmytro/footer.html
+        //= html/dmytro/footer.html
       </div>
     </footer>
   </div>
   <!-- DMYTRO -->
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

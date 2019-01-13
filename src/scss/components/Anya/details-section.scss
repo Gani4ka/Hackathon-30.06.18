@@ -1,9 +1,83 @@
 .details-section {
-  min-height: 510px;
-  padding-top: 135px;
+  // min-height: 510px;
+  padding-top: 80px;
+  transform-origin: center center;
+  transform: rotate(-$layout-angle);
+  position: relative;
+  background-color: #fff;
+  z-index: 6;
 
   &__wrapper {
     max-width: 1170px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0 70px;
+    display: flex;
+    transform-origin: center center;
+    transform: rotate($layout-angle);
+  }
+}
+
+.card {
+  padding: 0 20px;
+  text-align: center;
+  color: $main-color-dark;
+
+  &__image {
+    width: 198px;
+    height: 211px;
+
+    &--community {
+      animation: animation-community 3s infinite;
+    }
+
+    &--community:hover {
+      fill: pink;
+      transition: color 200ms linear;
+    }
+
+    &--talk-shop:hover {
+      transform: scale(1.1);
+      transition: color 200ms linear;
+    }
+
+    &--war-story:hover {
+      animation: animation-war-story 2s;
+    }
+  }
+
+  &__title {
+    padding-top: 32px;
+    font-size: 35px;
+    font-weight: $black;
+  }
+
+  &__text {
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: $regular;
+  }
+}
+
+@keyframes animation-war-story {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animation-community {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(-5deg);
   }
 }

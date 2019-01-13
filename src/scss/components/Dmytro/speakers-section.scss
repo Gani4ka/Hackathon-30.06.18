@@ -1,10 +1,129 @@
 .speakers-section {
-  padding-top: 145px;
-  padding-bottom: 178px;
-  min-height: 400px;
+  transform-origin: center center;
+  transform: rotate(-$layout-angle);
+  position: relative;
+  background-color: #fff;
+  padding: 145px 0px 178px;
+  margin: 0 auto;
+  padding-top: 175px;
+  margin-left: -200px;
+  z-index: 5;
+  padding-left: 200px;
+  padding-bottom: 150px;
+  margin-right: -100px;
+  padding-right: 100px;
 
   &__wrapper {
-    max-width: 1170px;
-    margin: auto;
+    width: 110%;
+    min-height: 700px;
+    margin: 0 auto;
+    max-width: 970px;
+    transform-origin: center center;
+    transform: rotate($layout-angle);
+  }
+
+  &__title {
+    @include section-title;
+    padding-bottom: 26px;
+  }
+
+  &__text {
+    @include section-text;
+    max-width: 573px;
+    padding-bottom: 60px;
+  }
+
+  &__list {
+    flex-wrap: wrap;
+    @extend %flex-list;
+  }
+
+  &__item {
+    padding-bottom: 39px;
+    position: relative;
+  }
+
+  &__item:hover .speakers-card {
+    opacity: 1;
+    transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  &__item:hover .speakers-section__img--operator {
+    transform: scale(1.2);
+
+
+    transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+
+  &__img {
+    width: 299px;
+    height: 299px;
+    border-radius: 15px;
   }
 }
+
+.speakers-card {
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  position: absolute;
+  top: 0px;
+  background-image: url(../img/speakers-background.png);
+  width: 299px;
+  height: 299px;
+  border-radius: 15px;
+  background-color: $mark-color-dark;
+  padding-left: 35px;
+
+  &__name {
+    color: #fefefe;
+    font-family: $main-font;
+    font-size: 45px;
+    font-weight: $black;
+    line-height: 43px;
+    max-width: 194px;
+    padding-top: 37px;
+    padding-bottom: 23px;
+  }
+
+  &__name::after {
+    display: block;
+    content: "";
+    width: 86px;
+    height: 6px;
+    background-color: #ffffff;
+    margin-top: 11px;
+  }
+
+  &__discr {
+    display: block;
+    max-width: 199px;
+    color: #fefefe;
+    font-family: $main-font;
+    font-size: 18px;
+    font-weight: $medium;
+    text-decoration: none;
+    padding-bottom: 46px;
+  }
+
+  &__discr:hover {
+    text-decoration: underline;
+  }
+
+  &__social-list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__img {
+    width: 33px;
+    height: 33px;
+    margin-right: 5px;
+  }
+}
+
+.speakers-card__img--dribbble {
+  fill: black;
+}
+
+

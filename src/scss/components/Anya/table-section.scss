@@ -1,19 +1,115 @@
 .table-section {
-  min-height: 230px;
-  padding-top: 100px;
-  padding-bottom: 85px;
+  min-height: 530px;
+  margin-left: -100px;
   transform-origin: center center;
   transform: rotate(-$layout-angle);
   position: relative;
-  background-color: #faf;
-  // min-height: 100px;
-  // padding: 100px 0px 40px;
+  background-color: #fff;
+  padding: 160px 0px 230px;
   z-index: 5;
+  margin-left: -100px;
 
   &__wrapper {
     max-width: 1170px;
     margin: 0 auto;
+    padding-left: 100px;
+    padding-bottom: 80px;
     transform-origin: center center;
     transform: rotate($layout-angle);
+
+    &::after {
+      content: url("../img/elite-badge.png");
+      position: absolute;
+      bottom: -440px;
+      left: 70px;
+      animation: elite-ball 20s ease-in-out 0s infinite;
+    }
+  }
+
+  &__text {
+    width: 870px;
+    margin: 0 auto;
+    padding-top: 37px;
+    text-align: center;
+    color: $main-color-dark;
+    font-weight: $light;
+  }
+}
+
+.table {
+  margin: 0 auto;
+  width: 1030px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  display: block;
+  overflow: hidden;
+  border-collapse: collapse;
+
+  // & td, th, tr {
+  //   border: none;
+  //   border-spacing: 0;
+  //   outline: 0;
+  // border: 2px solid transparent;
+  // }
+
+  &__head {
+    height: 75px;
+    background-color: $mark-color-light;
+    // border-spacing: 0;
+    // border: none;
+    font-weight: &black;
+    font-size: 30px;
+    color: #fff;
+  }
+
+  &__row {
+    height: 75px;
+    font-weight: $regular;
+    font-size: 22px;
+    color: #fff;
+    background-color: $table-color-dark;
+    // border: none;
+
+    &:nth-of-type(4n) {
+      background-color: $table-color-light;
+    }
+  }
+
+  &__time {
+    text-align: center;
+    width: 230px;
+    // border: none;
+  }
+
+  &__stuff {
+    text-align: left;
+    width: 670px;
+    padding-left: 70px;
+    // border: none;
+  }
+
+  &__plus {
+    width: 130px;
+    text-align: center;
+    vertical-align: middle;
+
+    img {
+      cursor: pointer;
+    }
+  }
+}
+
+@keyframes elite-ball {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(800px, -50px);
+  }
+
+  100% {
+    transform: translate(0, 0);
   }
 }

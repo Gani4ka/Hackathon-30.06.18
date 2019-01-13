@@ -1,6 +1,13 @@
 .contact-section {
   padding-top: 65px;
   padding-bottom: 65px;
+  background-image: url('../img/map.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 6;
 
   &__wrapper {
     max-width: 1170px;
@@ -12,7 +19,8 @@
   @include flex($ai: flex-start);
   margin: 0 auto;
   width: 970px;
-  padding: 60px 70px;
+  padding: 60px 70px 53px;
+  background-color: $main-color-light;
 
   &__location-container{
     padding: 38px 30px 20px;
@@ -20,7 +28,13 @@
 
   &__address{
     width: 270px;
-    margin: 0 auto 30px;
+    margin: 0 auto 27px;
+    color: $text-color-dark;
+    font-family: $main-font;
+    font-size: 18px;
+    font-weight: $light;
+    line-height: 1.2;
+    text-align: center;
 
 
     &::before{
@@ -28,7 +42,7 @@
       display: block;
       width: 132px;
       height: 140px;
-      margin: 0 auto 45px;
+      margin: 0 auto 43px;
       background-image: url(../../../img/hexagonal-card.png);
       background-repeat: no-repeat;
       background-position: top 0 left 0;
@@ -37,11 +51,12 @@
   }
 
   &__button{
-    width: 200px;
-    min-height: 55px;
-    display: block;
+    @include borderless-button ($rds: 15px, $wdth: 200px, $mnh: 55px, $bgc: $mark-color-dark);
     margin: 0 auto;
-    background-color: $mark-color-dark;
+    color: $main-color-light;
+    font-family: $main-font;
+    font-size: 22px;
+    font-weight: $regular;
   }
 
   &__form-container{
@@ -60,20 +75,47 @@
     display: block;
     width: 100%;
     box-sizing: border-box;
+    padding: 14px 18px;
     margin-bottom: 27px;
+    border: 1px solid $mark-color-dark;
+    border-radius: 4px;
+    color: $text-color-dark;
+    font-family: $main-font;
+    font-size: 19px;
+    font-weight: $light;
+
+    &::-webkit-input-placeholder{
+      color: $text-color-light;
+    }
   }
 
   &__textarea{
     display: block;
     width: 100%;
-    min-height: 250px;
+    min-height: 252px;
     box-sizing: border-box;
     resize: none;
+    padding: 14px 18px;
     margin-bottom: 27px;
+    border: 1px solid $text-color-light;
+    border-radius: 4px;
+    color: $text-color-dark;
+    font-family: $main-font;
+    font-size: 19px;
+    font-weight: $light;
+
+    &::-webkit-input-placeholder{
+      color: $text-color-light;
+    }
   }
 
   &__submit-btn{
-    @include borderless-button ($rds: 5px, $wdth: 100%, $mnh: 60px, $bgc: $table-color-dark)
+    @include borderless-button ($rds: 5px, $wdth: 100%, $mnh: 60px, $bgc: $table-color-dark);
+
+    color: $main-color-light;
+    font-family: $main-font;
+    font-size: 22px;
+    font-weight: $regular;
 
   }
 
