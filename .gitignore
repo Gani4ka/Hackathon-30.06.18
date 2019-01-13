@@ -7,7 +7,7 @@ yarn-error.log*
 
 
 # build/
-build/
+# build/
 
 # Runtime data
 pids
@@ -34,11 +34,6 @@ bower_components
 .lock-wscript
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
-
-# build/Release
-=======
-#build/Release
-#build
 
 # Dependency directories
 node_modules/
